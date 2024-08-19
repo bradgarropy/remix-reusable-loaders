@@ -7,8 +7,8 @@ const Navigation = () => {
                 Home
             </NavLink>
 
-            <NavLink to="/about" prefetch="intent">
-                About
+            <NavLink to="/login" prefetch="intent">
+                Login
             </NavLink>
         </nav>
     )
