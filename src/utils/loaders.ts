@@ -2,12 +2,13 @@ import {json, redirect} from "@remix-run/node"
 
 const AUTHENTICATED = false
 
+const user = {username: "bradgarropy"}
+
 const authLoader = () => {
     if (!AUTHENTICATED) {
         throw redirect("/login")
     }
 
-    const user = {username: "bradgarropy"}
     return json({user})
 }
 
@@ -16,7 +17,6 @@ const requireAuth = () => {
         throw redirect("/login")
     }
 
-    const user = {username: "bradgarropy"}
     return user
 }
 
