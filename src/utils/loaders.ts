@@ -1,6 +1,6 @@
 import {json, redirect} from "@remix-run/node"
 
-const AUTHENTICATED = false
+const AUTHENTICATED = true
 
 const user = {username: "bradgarropy"}
 
